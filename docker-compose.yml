@@ -1,0 +1,10 @@
+version: "3"
+services:
+  swoft:
+     build: 
+       dockerfile: docker-files/Dockerfile
+       context: .
+     volumes:
+       - ./swoft:/var/www/html
+     ports:
+       - 8080:18306
